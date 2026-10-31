@@ -25,6 +25,7 @@ Then import it on Vercel:
 2. Import the repository you just created.
 3. Deploy. `vercel.json` already sets the framework to Vite, the build to `npm run build`, and the output to `dist`. Leave those as they are.
 4. Each push to `main` publishes a new deployment.
+5. In the Vercel project, open **Settings → Domains** and add `navoraedu.com`. Point the domain’s DNS at the records Vercel shows. The site’s canonical address is [https://navoraedu.com/](https://navoraedu.com/).
 
 Paste the Apps Script `/exec` URL into `sheetWebAppUrl` in `index.html` and push before you rely on the live site to file rows. WhatsApp works on the deployed site either way.
 

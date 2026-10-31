@@ -4,29 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light" />
-    <title>Navora Overseas Education | Study abroad counselling</title>
+    <title>NAVORA Overseas Education | Study abroad counselling</title>
     <meta
       name="description"
-      content="Navora Overseas Education counsels students planning a degree abroad. Call or WhatsApp +91 82817 18626, or send an enquiry from this page."
+      content="NAVORA Overseas Education counsels students planning a degree abroad. Call or WhatsApp +91 82817 18626, or enquire at navoraedu.com."
     />
+    <link rel="canonical" href="https://navoraedu.com/" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="author" content="Navora Overseas Education" />
+    <meta name="author" content="NAVORA Overseas Education" />
     <meta name="theme-color" content="#102033" />
     <meta name="format-detection" content="telephone=no" />
-    <meta property="og:title" content="Navora Overseas Education | Study abroad counselling" />
+    <meta property="og:title" content="NAVORA Overseas Education | Study abroad counselling" />
     <meta
       property="og:description"
-      content="A counselling desk for students leaving India to study abroad. Call or WhatsApp +91 82817 18626, or send an enquiry."
+      content="A counselling desk for students leaving India to study abroad. Call or WhatsApp +91 82817 18626, or enquire at navoraedu.com."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://navoraedu.com/" />
     <meta property="og:locale" content="en_IN" />
-    <meta property="og:site_name" content="Navora Overseas Education" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Navora Overseas Education | Study abroad counselling" />
+    <meta property="og:site_name" content="NAVORA Overseas Education" />
+    <meta property="og:image" content="https://navoraedu.com/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="NAVORA Overseas Education" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NAVORA Overseas Education | Study abroad counselling" />
     <meta
       name="twitter:description"
-      content="A counselling desk for students leaving India to study abroad. Call or WhatsApp +91 82817 18626, or send an enquiry."
+      content="A counselling desk for students leaving India to study abroad. Call or WhatsApp +91 82817 18626, or enquire at navoraedu.com."
     />
+    <meta name="twitter:image" content="https://navoraedu.com/og.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,7 +48,11 @@
       {
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
-        "name": "Navora Overseas Education",
+        "name": "NAVORA Overseas Education",
+        "alternateName": "Navora Overseas Education",
+        "url": "https://navoraedu.com/",
+        "logo": "https://navoraedu.com/navora-logo.png",
+        "image": "https://navoraedu.com/og.png",
         "description": "Counselling for students planning a degree abroad. Enquiries go to WhatsApp and the admissions desk on +91 82817 18626.",
         "telephone": "+918281718626",
         "areaServed": "IN",
@@ -647,6 +658,13 @@
         gap: 18px 28px;
       }
 
+      .footer-id {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
       .footer-brand {
         display: flex;
         align-items: center;
@@ -654,6 +672,17 @@
         color: var(--ink);
         text-decoration: none;
         font-weight: 600;
+      }
+
+      .domain {
+        color: var(--ink);
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .domain:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
       }
 
       .footer-brand img {
@@ -808,7 +837,7 @@
             src="navora-logo.png"
             width="900"
             height="224"
-            alt="Navora Overseas Education"
+            alt="NAVORA Overseas Education"
           />
         </a>
         <a class="phone phone-full" href="tel:+918281718626">+91 82817 18626</a>
@@ -1077,9 +1106,12 @@
 
     <footer>
       <div class="wrap footer-inner">
-        <a class="footer-brand" href="#top">
-          <img src="navora-logo.png" width="900" height="224" alt="Navora Overseas Education" />
-        </a>
+        <div class="footer-id">
+          <a class="footer-brand" href="#top">
+            <img src="navora-logo.png" width="900" height="224" alt="NAVORA Overseas Education" />
+          </a>
+          <a class="domain" href="https://navoraedu.com/">navoraedu.com</a>
+        </div>
         <p>Your details are used only to reply about studying abroad.</p>
         <a class="nowrap" href="tel:+918281718626">+91 82817 18626</a>
       </div>
@@ -1198,7 +1230,7 @@
         if (data.intake) lines.push("Intake: " + data.intake);
         if (data.course) lines.push("Course: " + data.course);
         if (data.message) lines.push("Note: " + data.message);
-        lines.push("", "Sent from the Navora website.");
+        lines.push("", "Sent from navoraedu.com.");
         return "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(lines.join("\n"));
       }
 
