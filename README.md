@@ -1,6 +1,6 @@
 # Navora Overseas Education
 
-A single-page counselling site for Navora Overseas Education: a hero, an about section, the students the desk hears from, testimonials, and a contact form. WhatsApp is offered on the page without printing the desk number. Sending the form opens WhatsApp to **+91 82817 18626** with the enquiry already written, shows that number so it can be called, and posts the same details into the admissions spreadsheet.
+A single-page counselling site for Navora Overseas Education. Counselling is described as 100% free. The form opens WhatsApp to **+91 82817 18626** with the enquiry already written, thanks the student on the page, shows the desk number only after that send, and files the same details on the admissions spreadsheet once the sheet endpoint is connected.
 
 Spreadsheet: [Navora admissions sheet](https://docs.google.com/spreadsheets/d/1kORq_GdTGKmle2pjRyBWx43umELZl8PFTBXGIHgsQqE/edit?gid=0#gid=0)
 
@@ -40,7 +40,9 @@ The spreadsheet is private, so a browser cannot write to it until you publish a 
    - Execute as: **Me**
    - Who has access: **Anyone**
 5. Copy the web app URL (it ends in `/exec`).
-6. Paste it into `sheetWebAppUrl` near the top of the script in `index.html`.
+6. Connect it in one of these places:
+   - `sheetWebAppUrl` in `index.html`, then push, or
+   - a Vercel environment variable named `SHEET_WEBAPP_URL` (Production), then redeploy. The site posts to `/api/enquiry`, which forwards the row to that URL.
 7. Restart the dev server, or rebuild.
 
 Leave the first sheet empty, or give row 1 these headers:

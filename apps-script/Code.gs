@@ -55,12 +55,14 @@ function readData_(e) {
   var data = {};
   if (e && e.parameter) data = e.parameter;
   if (e && e.postData && e.postData.contents) {
-    var type = e.postData.type || "";
-    if (type.indexOf("application/json") !== -1) {
-      try {
-        data = JSON.parse(e.postData.contents);
-      } catch (ignore) {}
-    }
+    try {
+      var parsed = JSON.parse(e.postData.contents);
+      if (parsed && typeof parsed === "object") {
+        for (var key in parsed) {
+          if (Object.prototype.hasOwnProperty.call(parsed, key)) data[key] = parsed[key];
+        }
+      }
+    } catch (ignore) {}
   }
   return data;
 }
