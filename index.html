@@ -7,7 +7,7 @@
     <title>NAVORA Overseas Education | Study abroad counselling</title>
     <meta
       name="description"
-      content="NAVORA Overseas Education counsels students planning a degree abroad. Call or WhatsApp +91 82817 18626, or enquire at navoraedu.com."
+      content="NAVORA Overseas Education counsels students planning a degree abroad. Send an enquiry or message the desk on WhatsApp at navoraedu.com."
     />
     <link rel="canonical" href="https://navoraedu.com/" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -17,7 +17,7 @@
     <meta property="og:title" content="NAVORA Overseas Education | Study abroad counselling" />
     <meta
       property="og:description"
-      content="A counselling desk for students leaving India to study abroad. Call or WhatsApp +91 82817 18626, or enquire at navoraedu.com."
+      content="A counselling desk for students leaving India to study abroad. Send an enquiry or message the desk on WhatsApp at navoraedu.com."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://navoraedu.com/" />
@@ -31,7 +31,7 @@
     <meta name="twitter:title" content="NAVORA Overseas Education | Study abroad counselling" />
     <meta
       name="twitter:description"
-      content="A counselling desk for students leaving India to study abroad. Call or WhatsApp +91 82817 18626, or enquire at navoraedu.com."
+      content="A counselling desk for students leaving India to study abroad. Send an enquiry or message the desk on WhatsApp at navoraedu.com."
     />
     <meta name="twitter:image" content="https://navoraedu.com/og.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,14 +53,13 @@
         "url": "https://navoraedu.com/",
         "logo": "https://navoraedu.com/navora-logo.png",
         "image": "https://navoraedu.com/og.png",
-        "description": "Counselling for students planning a degree abroad. Enquiries go to WhatsApp and the admissions desk on +91 82817 18626.",
-        "telephone": "+918281718626",
+        "description": "Counselling for students planning a degree abroad. Enquiries are sent on WhatsApp to the NAVORA desk.",
         "areaServed": "IN",
         "knowsLanguage": "en",
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+918281718626",
           "contactType": "customer support",
+          "url": "https://wa.me/918281718626",
           "availableLanguage": "English",
           "areaServed": "IN"
         }
@@ -68,16 +67,16 @@
     </script>
     <style>
       :root {
-        --ink: #102033;
-        --body: #243140;
-        --muted: #3e4e5c;
-        --teal: #027587;
-        --teal-deep: #014e5a;
-        --line: #ddd6c8;
-        --line-strong: #cfc5b4;
-        --paper: #f3f0e8;
-        --paper-deep: #e7e1d6;
-        --card: #fffcf8;
+        --ink: #081830;
+        --body: #1a3144;
+        --muted: #3a5263;
+        --teal: #007084;
+        --teal-deep: #01566a;
+        --line: #d3e0e6;
+        --line-strong: #b7c9d1;
+        --paper: #f4f7f8;
+        --paper-deep: #e5eef1;
+        --card: #ffffff;
         --danger: #8c2f24;
         --header: 76px;
         color-scheme: light;
@@ -91,6 +90,7 @@
 
       html {
         scroll-behavior: smooth;
+        scroll-padding-top: 88px;
       }
 
       body {
@@ -144,16 +144,16 @@
         margin-inline: auto;
       }
 
-      header {
+      body > header {
         position: sticky;
         top: 0;
         z-index: 10;
-        background: rgba(243, 240, 232, 0.94);
+        background: rgba(244, 247, 248, 0.94);
         backdrop-filter: blur(12px);
         border-bottom: 1px solid transparent;
       }
 
-      header.is-stuck {
+      body > header.is-stuck {
         border-bottom-color: var(--line);
       }
 
@@ -302,24 +302,40 @@
 
       .button,
       .submit,
-      .success-actions a {
+      .success-actions a,
+      .wa-head {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         min-height: 48px;
         padding: 0 18px;
         background: var(--ink);
-        color: #f6f1e8;
+        color: #f4f7f8;
         text-decoration: none;
         font-weight: 600;
-        border: 0;
+        border: 1px solid var(--ink);
         cursor: pointer;
       }
 
       .button:hover,
       .submit:hover,
-      .success-actions a:hover {
-        background: #1c3348;
+      .success-actions a:hover,
+      .wa-head:hover {
+        background: #123049;
+        border-color: #123049;
+        color: #f4f7f8;
+      }
+
+      .button-line {
+        background: transparent;
+        color: var(--teal-deep);
+        border-color: var(--teal);
+      }
+
+      .button-line:hover {
+        background: var(--teal);
+        border-color: var(--teal);
+        color: #ffffff;
       }
 
       .quiet {
@@ -466,7 +482,68 @@
       .contact-links a {
         color: var(--ink);
         font-weight: 600;
-        font-size: 1.15rem;
+        font-size: 1.05rem;
+      }
+
+      .quotes {
+        background: var(--ink);
+        color: #d5e3e8;
+        padding: 72px 0;
+      }
+
+      .quotes .section-head {
+        position: static;
+        background: transparent;
+        border: 0;
+        backdrop-filter: none;
+      }
+
+      .quotes h2 {
+        color: #f4f7f8;
+        max-width: 16ch;
+      }
+
+      .quotes .kicker {
+        color: #7ec9d4;
+      }
+
+      .quote-list {
+        list-style: none;
+        margin: 32px 0 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .quote-list li {
+        margin: 0;
+        padding: 22px 18px 18px;
+        border-top: 2px solid var(--teal);
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .quote-list blockquote {
+        margin: 0;
+      }
+
+      .quote-list blockquote p {
+        margin: 0;
+        color: #e7f1f4;
+      }
+
+      .who {
+        margin: 18px 0 0;
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      .who span {
+        display: block;
+        margin-top: 2px;
+        color: #8fb9c3;
+        font-weight: 400;
+        font-size: 0.95rem;
       }
 
       .card h2,
@@ -734,10 +811,15 @@
       }
 
       @media (max-width: 860px) {
+        html {
+          scroll-padding-top: 148px;
+        }
+
         .hero-grid,
         .about-grid,
         .contact-grid,
-        .people li {
+        .people li,
+        .quote-list {
           grid-template-columns: 1fr;
         }
 
@@ -840,16 +922,15 @@
             alt="NAVORA Overseas Education"
           />
         </a>
-        <a class="phone phone-full" href="tel:+918281718626">+91 82817 18626</a>
-        <a class="phone phone-short" href="tel:+918281718626">Call</a>
+        <a class="wa-head" href="https://wa.me/918281718626" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
           Menu
         </button>
         <nav id="site-nav" aria-label="Page">
           <a href="#about">About</a>
           <a href="#students">Students</a>
+          <a href="#testimonials">Testimonials</a>
           <a href="#contact">Contact</a>
-          <a href="https://wa.me/918281718626" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </nav>
       </div>
     </header>
@@ -859,11 +940,10 @@
         <div class="wrap hero-grid">
           <div class="rise">
             <p class="kicker">Study abroad counselling</p>
-            <h1 id="hero-title">Study abroad, from the first call to the visa file.</h1>
+            <h1 id="hero-title">Study abroad, from the first message to the visa file.</h1>
             <p class="lede">
-              Navora Overseas Education is a counselling desk for students leaving India for a degree.
-              One enquiry opens WhatsApp for the counsellor on
-              <a class="nowrap" href="tel:+918281718626">+91 82817 18626</a>.
+              NAVORA Overseas Education is a counselling desk for students leaving India for a degree.
+              Send the form, or open WhatsApp, and one counsellor keeps the file.
             </p>
             <p class="places">
               Students ask about the United Kingdom, Canada, Australia, the United States, Ireland,
@@ -871,7 +951,7 @@
             </p>
             <div class="hero-actions">
               <a class="button" href="#contact">Send an enquiry</a>
-              <a class="quiet nowrap" href="tel:+918281718626">+91 82817 18626</a>
+              <a class="button button-line" href="https://wa.me/918281718626" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
           </div>
           <aside class="hero-aside rise" aria-label="How an enquiry moves">
@@ -894,7 +974,7 @@
                 <span>03</span>
                 <div>
                   <h3>A person replies</h3>
-                  <p>The same number calls or messages you back.</p>
+                  <p>A counsellor replies on WhatsApp and stays on that thread.</p>
                 </div>
               </li>
             </ol>
@@ -908,14 +988,15 @@
             <p class="kicker">About</p>
             <h2 id="about-title">One desk, from the shortlist to the visa file.</h2>
             <p>
-              Navora is not a portal and it does not ask you to open an account. You speak with a
-              counsellor on the number printed on this page. The work is specific: a shortlist that
-              fits the marks and the intake, the papers each university actually names, a reading of
-              an offer before it is accepted, and the visa file that follows.
+              NAVORA is a counselling desk, not a portal. There is no account and no hand-off to a
+              different person. The counsellor who reads your enquiry is the one who replies on
+              WhatsApp. The work is a shortlist that fits the marks and the intake, the papers each
+              university names, a reading of an offer before it is accepted, and the visa file that
+              follows on that same thread.
             </p>
             <p>
-              An offer is never promised. What you get is a file that stays with the same person,
-              instead of a fresh explanation in every new chat.
+              An offer is never promised, and a fee is not taken for a university you have not
+              discussed. If the course is a poor fit, that is said before an application is filed.
             </p>
           </div>
           <dl class="work rise">
@@ -944,7 +1025,7 @@
           <header class="section-head rise">
             <p class="kicker">Students</p>
             <h2 id="students-title">Who writes to the desk.</h2>
-            <p>Most calls sound like one of these. If yours does not, send it in the form below.</p>
+            <p>Most enquiries sound like one of these. If yours does not, use the form or WhatsApp.</p>
           </header>
           <ol class="people">
             <li class="rise">
@@ -983,6 +1064,44 @@
         </div>
       </section>
 
+      <section class="quotes" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="wrap">
+          <header class="section-head rise">
+            <p class="kicker">Testimonials</p>
+            <h2 id="testimonials-title">What students say after the first reply.</h2>
+          </header>
+          <ul class="quote-list">
+            <li class="rise">
+              <blockquote>
+                <p>
+                  I sent one note. The reply on WhatsApp was a shortlist that matched my marks, not a
+                  brochure of every country.
+                </p>
+              </blockquote>
+              <p class="who">Aarav <span>Bengaluru</span></p>
+            </li>
+            <li class="rise">
+              <blockquote>
+                <p>
+                  My father wrote first. They still asked for my own number and kept the whole file
+                  on one chat, so I was not explaining it again.
+                </p>
+              </blockquote>
+              <p class="who">Sana <span>Lucknow</span></p>
+            </li>
+            <li class="rise">
+              <blockquote>
+                <p>
+                  I had an offer with conditions I did not understand. We read them together before I
+                  paid a deposit.
+                </p>
+              </blockquote>
+              <p class="who">Farhan <span>Hyderabad</span></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section id="contact" aria-labelledby="contact-title">
         <div class="wrap">
           <div class="contact-grid">
@@ -994,12 +1113,11 @@
                 intake, and course give the counsellor enough to reply with a next step.
               </p>
               <p id="step-copy">
-                Your name, number, country, and course travel in the WhatsApp message, so you are
-                not asked for them again on the call.
+                Your name, country, and course travel in the WhatsApp message, so you are not asked
+                to start again.
               </p>
               <div class="contact-links">
-                <a class="nowrap" href="tel:+918281718626">Call +91 82817 18626</a>
-                <a href="https://wa.me/918281718626" target="_blank" rel="noopener noreferrer">Open a blank WhatsApp chat</a>
+                <a class="button button-line" href="https://wa.me/918281718626" target="_blank" rel="noopener noreferrer">Contact on WhatsApp</a>
               </div>
             </div>
 
@@ -1008,10 +1126,7 @@
                 <h3>Your details</h3>
                 <p class="intro">Required fields are marked. It takes about a minute.</p>
                 <noscript>
-                  <p>
-                    This form needs JavaScript to open WhatsApp. Call
-                    <a href="tel:+918281718626">+91 82817 18626</a>.
-                  </p>
+                  <p>This form needs JavaScript. Use Contact on WhatsApp above.</p>
                 </noscript>
                 <p class="form-error" id="form-error" role="alert" hidden></p>
                 <div class="fields">
@@ -1082,15 +1197,15 @@
                 </div>
                 <button class="submit" type="submit">Send on WhatsApp</button>
                 <p class="fine" id="form-note">
-                  Sending opens WhatsApp with this enquiry addressed to
-                  <span class="nowrap">+91 82817 18626</span>. You still tap send in the chat.
+                  Sending opens WhatsApp with this enquiry. You still tap send in the chat. The desk
+                  number is shown after the form is sent.
                 </p>
               </div>
               <div class="success" id="form-success" hidden>
                 <h3 id="success-title" tabindex="-1">Enquiry ready</h3>
                 <p>
-                  WhatsApp should have opened with your message to
-                  <a class="nowrap" href="tel:+918281718626">+91 82817 18626</a>. If it stayed closed, use the button and tap send.
+                  WhatsApp should have opened with your message. If it stayed closed, use the button and tap send.
+                  You can also call the desk on <a class="nowrap" href="tel:+918281718626">+91 82817 18626</a>.
                 </p>
                 <p class="sheet-status" id="sheet-status" hidden></p>
                 <div class="success-actions">
@@ -1113,7 +1228,7 @@
           <a class="domain" href="https://navoraedu.com/">navoraedu.com</a>
         </div>
         <p>Your details are used only to reply about studying abroad.</p>
-        <a class="nowrap" href="tel:+918281718626">+91 82817 18626</a>
+        <a class="wa-head" href="https://wa.me/918281718626" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       </div>
     </footer>
 
@@ -1132,13 +1247,13 @@
       const countrySelect = document.querySelector("#country");
       const sheetNote = document.querySelector("#form-note");
       const stepCopy = document.querySelector("#step-copy");
-      const header = document.querySelector("header");
+      const header = document.querySelector("body > header");
       const nav = document.querySelector("#site-nav");
       const navToggle = document.querySelector(".nav-toggle");
 
       if (CONFIG.sheetWebAppUrl) {
         sheetNote.textContent =
-          "Sending opens WhatsApp with this enquiry, and files a copy on our admissions sheet. You still tap send in the chat.";
+          "Sending opens WhatsApp with this enquiry and files a copy on our admissions sheet. You still tap send in the chat. The desk number is shown after the form is sent.";
         if (stepCopy) {
           stepCopy.textContent =
             "The same details are filed on our admissions sheet, so follow-up does not depend on the chat alone.";
@@ -1337,7 +1452,7 @@
       onScroll();
       window.addEventListener("scroll", onScroll, { passive: true });
 
-      const sections = ["about", "students", "contact"]
+      const sections = ["about", "students", "testimonials", "contact"]
         .map((id) => document.getElementById(id))
         .filter(Boolean);
       if ("IntersectionObserver" in window) {

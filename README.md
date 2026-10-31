@@ -1,6 +1,6 @@
 # Navora Overseas Education
 
-A single-page counselling site for Navora Overseas Education: a hero, an about section, the students the desk hears from, and a contact form. The form opens WhatsApp to **+91 82817 18626** with the enquiry already written, and posts the same details into the admissions spreadsheet.
+A single-page counselling site for Navora Overseas Education: a hero, an about section, the students the desk hears from, testimonials, and a contact form. WhatsApp is offered on the page without printing the desk number. Sending the form opens WhatsApp to **+91 82817 18626** with the enquiry already written, shows that number so it can be called, and posts the same details into the admissions spreadsheet.
 
 Spreadsheet: [Navora admissions sheet](https://docs.google.com/spreadsheets/d/1kORq_GdTGKmle2pjRyBWx43umELZl8PFTBXGIHgsQqE/edit?gid=0#gid=0)
 
