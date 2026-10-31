@@ -15,6 +15,19 @@ Open [http://127.0.0.1:8741](http://127.0.0.1:8741).
 
 `npm run build` writes a static site to `dist/` (the page plus the logo). Host that folder anywhere that serves static files.
 
+## Put it on your Git host, then Vercel
+
+This project does not have your repository yet. In Cursor, click the **Create repo** pill and choose the GitHub account or organization that should own it. That copies this project, including `main`, into that repository.
+
+Then import it on Vercel:
+
+1. Open [vercel.com/new](https://vercel.com/new) and authorize the same Git host if Vercel asks.
+2. Import the repository you just created.
+3. Deploy. `vercel.json` already sets the framework to Vite, the build to `npm run build`, and the output to `dist`. Leave those as they are.
+4. Each push to `main` publishes a new deployment.
+
+Paste the Apps Script `/exec` URL into `sheetWebAppUrl` in `index.html` and push before you rely on the live site to file rows. WhatsApp works on the deployed site either way.
+
 ## Connect the Google Sheet
 
 The spreadsheet is private, so a browser cannot write to it until you publish a small script that runs as you. Do this once:
