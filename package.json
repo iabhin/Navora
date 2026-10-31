@@ -1,0 +1,14 @@
+{
+  "name": "navora-overseas-education",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Navora Overseas Education enquiry page. The form opens WhatsApp and files a copy in Google Sheets.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 8741 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 8741 --strictPort"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
